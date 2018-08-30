@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Users/Esteth/Downloads/android-studio-ide-182.4978721-windows/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_timer_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Users/Esteth/Downloads/android-studio-ide-182.4978721-windows/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_trending_down_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,8 +28,11 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_timer_black_24dp" />
+                            <entry key="height" value="16" />
+                            <entry key="outputName" value="ic_trending_down_black_16dp" />
+                            <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\Esteth" />
+                            <entry key="width" value="16" />
                           </map>
                         </option>
                       </PersistentState>

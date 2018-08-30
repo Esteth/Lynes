@@ -6,8 +6,10 @@
     tools:context=".ParksListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ridesRecycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:itemCount="15"
         tools:listitem="@layout/list_item_ride" />
 
 </FrameLayout>
