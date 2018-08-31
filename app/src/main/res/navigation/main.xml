@@ -3,13 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main.xml"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/parksListFragment">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.esteth.lynes.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/parksListFragment"
         android:name="com.esteth.lynes.ParksListFragment"
@@ -20,6 +15,7 @@
             app:destination="@id/rideListFragment"
             app:popUpTo="@+id/parksListFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/rideListFragment"
         android:name="com.esteth.lynes.RideListFragment"
@@ -32,6 +28,7 @@
             android:id="@+id/action_show_ride"
             app:destination="@id/rideFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/rideFragment"
         android:name="com.esteth.lynes.RideFragment"
