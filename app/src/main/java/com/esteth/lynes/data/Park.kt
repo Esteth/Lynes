@@ -6,8 +6,10 @@ import androidx.room.*
 
 @Entity
 data class Park(
-    @PrimaryKey val id: Int,
     @ColumnInfo(name = "name") val name: String) {
+
+  @PrimaryKey(autoGenerate = true)
+  var id: Int = 0
 
   object DiffCallback : DiffUtil.ItemCallback<Park>() {
     override fun areItemsTheSame(oldItem: Park, newItem: Park): Boolean {
@@ -25,4 +27,7 @@ data class Park(
 interface ParkDao {
   @Query("SELECT * FROM park ORDER BY name ASC")
   fun parks(): LiveData<List<Park>>
+
+  @Insert
+  fun insert(park: Park)
 }
