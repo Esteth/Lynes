@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/parksListFragment"
         android:name="com.esteth.lynes.ParksListFragment"
-        android:label="fragment_parks_list"
-        tools:layout="@layout/fragment_parks_list" >
+        android:label="Parks List"
+        tools:layout="@layout/fragment_parks_list">
         <action
             android:id="@+id/action_show_park"
             app:destination="@id/rideListFragment"
@@ -19,8 +19,8 @@
     <fragment
         android:id="@+id/rideListFragment"
         android:name="com.esteth.lynes.RideListFragment"
-        android:label="fragment_ride_list"
-        tools:layout="@layout/fragment_ride_list" >
+        android:label="Ride List"
+        tools:layout="@layout/fragment_ride_list">
         <argument
             android:name="parkId"
             app:argType="integer" />
@@ -32,8 +32,8 @@
     <fragment
         android:id="@+id/rideFragment"
         android:name="com.esteth.lynes.RideFragment"
-        android:label="fragment_ride"
-        tools:layout="@layout/fragment_ride" >
+        android:label="Ride"
+        tools:layout="@layout/fragment_ride">
         <argument
             android:name="rideId"
             app:argType="string" />

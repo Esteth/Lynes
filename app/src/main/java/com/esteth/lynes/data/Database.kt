@@ -10,6 +10,7 @@ import kotlinx.coroutines.experimental.launch
 @Database(entities = [Park::class], version = 3)
 abstract class LynesDatabase : RoomDatabase() {
   abstract fun parkDao(): ParkDao
+  abstract fun rideDao(): RideDao
 
   companion object {
 

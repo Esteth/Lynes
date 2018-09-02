@@ -16,25 +16,25 @@ private const val ARG_PARK_ID = "parkId"
  * Fragment to display a list of rides within a single park.
  */
 class RideListFragment : Fragment() {
-    private var parkId: String? = null
+  private var parkId: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            parkId = it.getString(ARG_PARK_ID)
-        }
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    arguments?.let {
+      parkId = it.getString(ARG_PARK_ID)
     }
+  }
 
-    override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_ride_list, container, false)
-    }
+  override fun onCreateView(
+      inflater: LayoutInflater,
+      container: ViewGroup?,
+      savedInstanceState: Bundle?): View? {
+    return inflater.inflate(R.layout.fragment_ride_list, container, false)
+  }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        ridesRecycler
-                .addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
-    }
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    super.onViewCreated(view, savedInstanceState)
+    ridesRecycler
+        .addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.HORIZONTAL))
+  }
 }
